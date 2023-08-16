@@ -1,0 +1,18 @@
+void main()
+{
+    int noOfClasses = 16;
+    int noOfAttendClasses = 10;
+    num classPercentage = (noOfAttendClasses*100)/noOfClasses;
+    if(classPercentage>=75)
+    {
+        print('Student is allow to enter in exam hall.');
+    }
+    else if(classPercentage<75)
+    {
+        print('Student is not allow to enter in exam hall.');
+    }
+    else
+    {
+        print('Write correct no of classes.');
+    }
+}

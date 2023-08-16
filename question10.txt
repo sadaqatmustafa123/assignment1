@@ -1,0 +1,40 @@
+import 'dart:io';
+
+void main() {
+  print("Enter the first number:");
+  int number1 = int.parse(stdin.readLineSync()!);
+
+  print("Enter the second number:");
+  int number2 = int.parse(stdin.readLineSync()!);
+
+  print("Enter the third number:");
+  int number3 = int.parse(stdin.readLineSync()!);
+
+  int greatestNumber = findGreatestNumber(number1, number2, number3);
+  int lowestNumber = findLowestNumber(number1, number2, number3);
+
+  print("Greatest number: $greatestNumber");
+  print("Lowest number: $lowestNumber");
+}
+
+int findGreatestNumber(int a, int b, int c) {
+  int max = a;
+  if (b > max) {
+    max = b;
+  }
+  if (c > max) {
+    max = c;
+  }
+  return max;
+}
+
+int findLowestNumber(int a, int b, int c) {
+  int min = a;
+  if (b < min) {
+    min = b;
+  }
+  if (c < min) {
+    min = c;
+  }
+  return min;
+}

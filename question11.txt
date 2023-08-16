@@ -1,0 +1,10 @@
+import 'dart:math';
+
+void main() {
+  print("Enter a number:");
+  double number = double.parse(stdin.readLineSync()!);
+
+  double squareRoot = sqrt(number);
+
+  print("Square root of $number: $squareRoot");
+}
